@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    html, body {
+      height: 100%;
+  }
+  
+  html {
+      display: table;
+      margin: auto;
+  }
+  
+  body {
+      display: table-cell;
+      vertical-align: middle;
+  }
+  }
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background: #cc4eb1;
+    color: #b8e9cb;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #c992d4;
+  }
+  
+  nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .center {
+    text-align: center;
+    border: 3px solid green;
+  }
+  aside {
+    text-align: right 500px;
+    flex: 3;
+    background-color: #8de1ec;
+    padding: 50px;
+  }
+  
+  section {
+    .center {
+      text-align: center;
+      border: 3px solid green;
+    }
+    position: fixed right 500px;
+    flex: 3;
+    padding: 20px;
+  }
+  
+  .sample-img {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 1800px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
+    }
+    /* Change the header background */
+    header {
+      background: #56a85a;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: #beb3b4;
+    }
+  }
